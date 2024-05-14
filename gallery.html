@@ -1,0 +1,113 @@
+<!--Home Page
+Author: Manjeet Panwar
+Date: 2021
+-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/gallery_style.css">
+        <link rel="stylesheet" href="./css/style.css">
+        
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" scr="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Script to include nav, footer..... instead of coding them in all pages-->
+    <script>
+        $(function(){
+            var includes =$('[data-include]');
+            jQuery.each(includes, function(){
+                var file = 'views/' + $(this).data('include')+ '.html';
+                $(this).load(file);
+            });
+        });
+    </script> 
+    <title>Gallery</title>
+</head>
+
+<body style="margin-bottom: 100px;">
+
+    <div data-include="scrolling_text"></div>
+    <div data-include="nav"></div>
+    
+
+
+
+    <!-- Grid -->
+    <section class="container">
+       
+        <div>
+            <img src="img/tandoori_chicken.jpeg" alt="Tandoori Chicken" />
+            <span class="description">Tandoori Chicken</span>
+        </div>
+        <div>
+            <img src="img/samosa.jpeg" alt="Samosa">
+            <span class="description">Samosa</span>
+        </div>
+        <div>
+            <img src="img/dahi_bhalla.jpeg" alt="Dahi Bhalla">
+            <span class="description">Dahi Bhalla</span>
+        </div>
+        <div>
+            <img src="img/kohlapuri.jpeg" alt="Kohlapuri">
+            <span class="description">Kohlapuri</span>
+        </div>
+        <div>
+            <img src="img/mix_platter.jpeg" alt="Veg Platter">
+            <span class="description">Veg Platter</span>
+        </div>
+        <div>
+            <img src="img/Noodles.jpeg" alt="Noodles">
+            <span class="description">Noodles</span>
+        </div>
+        <div>
+            <img src="img/Madras.jpeg" alt="Madras">
+            <span class="description">Madras</span>
+        </div>
+        <div>
+            <img src="img/roti.jpeg" alt="Roti">
+            <span class="description">Roti</span>
+        </div>
+        <div>
+            <img src="img/tandoori_platter.jpeg" alt="Tandoori Platter">
+            <span class="description">Tandoori Platter</span>
+        </div>
+        <div>
+            <img src="img/Bombay Aloo.jpeg" alt="Bombay Aloo">
+            <span class="description">Bombay Aloo</span>
+        </div>
+        <div>
+            <img src="img/biryani.jpeg" alt="Biryani">
+            <span class="description">Biryani</span>
+        </div>
+        <div>
+            <img src="img/chocolate_naan.jpeg" alt="Chocolate Naan">
+            <span class="description">Chocolate Naan</span>
+        </div>
+        <div>
+            <img src="img/butter_naan.jpeg" alt="Butter Naan">
+            <span class="description">Butter Naan</span>
+        </div>
+        <div>
+            <img src="img/chicken_drumsticks.jpeg" alt="Chicken Drumsticks">
+            <span class="description">Chicken Drumsticks</span>
+        </div>
+        <div>
+            <img src="img/samosa_chat.jpeg" alt="Samosa Chat">
+            <span class="description">Samosa Chat</span>
+        </div>
+    </section>
+
+    <div data-include="footer"></div>
+
+</body>
+</html>
+

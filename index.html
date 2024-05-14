@@ -1,0 +1,114 @@
+<!--Home Page
+Author: Manjeet Panwar
+Date: 2021
+-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Tried of being served flavourless Indian food? Here at Bombay Masala, we serve true authetic Indian food. So order now......">
+  <meta name="keywords" content="Bombay Masala,Bombay Masala Palmy,Bombay Masala Palmerston North,Best Indian food,Best Indian food Palmerston North,Best Indian food Palmy, Indian food Palmy, Indian food palmerston north, top indian takeaway, top indian takeaway palmy, top indian takeaway palmerston north, best indian takeaway, best indian restaurant, cheap indian takeaway, cheap indian restaurants, best indian takeaway palmy, best indian takeaway palmerston north, cheap indian takeaway palmy, cheap indian takeaway palmerston north, top takeaway palmy, top takeaway palnerston north, best takeaway palmy, best takeaway palmerston north, best takeaway, top takeaway, places to eat in palmerston north">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/review.css"> 
+        
+    
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" scr="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Script to include nav, footer..... instead of coding them in all pages-->
+  <script>
+    $(function(){
+        var includes =$('[data-include]');
+        jQuery.each(includes, function(){
+            var file = 'views/' + $(this).data('include')+ '.html';
+            $(this).load(file);
+        });
+      });
+  </script>  
+  <title>Bombay Masala</title>
+</head>
+
+<body>
+  <div data-include="scrolling_text"></div>
+  <div data-include="nav"></div>
+   
+    
+    
+  <main>
+    <section class="home-intro">
+      <div data-include="intro"></div>
+    </section>
+  </main>
+
+<!--Using grid to display picture and story-->
+  <div class="row" style="margin-left: auto; margin-right: auto; width: 100%; margin-top: 85vh;">      
+    <img src="./img/ourstory.jpeg" class="column" width="200" height="100" style="width: 100%; height: auto;">
+
+    <div class="column" style="background-color: #333333; color: white; padding: 20px;">
+      <h1><b>Our Story</b></h1>
+      <p><b>Namasthe</b>, welcome to <b>Bombay Masala</b>. A small shop located at the corner of Botanical Road and Featherston Street has become everything to us. Over the years we have won hearts 
+          of great people of palmy with our tasty and authentic Indian food.
+      </p>
+
+      <p>The owner of Bombay Masala has worked in the food industry for over 25 years in some of the world-renowned restaurants 
+          and hotels. He started this shop in the hopes of providing the true authentic flavour of India to Kiwis.
+      </p>
+
+      <p>
+          We have over 100 dishes on our menu from street food of Bombay (now known as Mumbai) to some of the popular dishes from 
+          Southern India. We take pride in our food and we love serving you wonderful people. Here at <b>BOMBAY MASALA</b>, 
+          we are constantly striving to improve our service and quality in order to give our customers the very best experience.
+      </p>
+
+      <p>
+          We would like to thank everyone who supported us over the years and became part of our small family.
+      </p>
+      <h2><b>धन्यवाद</b></h2>
+        
+    </div>
+  </div>
+
+  <!--Review slideshow using review.script-->
+  <script src="js/reviews.js"></script>
+
+  <ul class="quote-slider">
+    <li id='quote0' style='right: 20%'>
+      "Great customer service. Will be back......"
+      <div class="site">Angela (Uber Eats)</div>
+    </li>
+    <li id='quote1'>
+      "Food is fantastic 👌"
+      <div class="site">Phillip (Google)</div>
+    </li>
+    <li id='quote2'>
+      "Tasted great, plenty for our family, ready on time." 
+      <div class="site">Maria (Menulog)</div>
+    </li>
+    <li id='quote3'>
+      "Brilliant experience every time I go there."
+      <div class="site">Himanshu (Google)</div>
+    </li>
+    <li id='quote4'>
+      "Great food, great prices, and super friendly staff  👍🏻"
+      <div class="site">Jacob (Google)</div>
+    </li>
+  </ul> 
+
+  <div container style="color: beige; position:sticky;margin-bottom:9.5vh; width: 100%; text-align: center; height: auto; background-color:  #ff9500; padding-top: 20px;">
+    <h1><b>We do catering as well</b></h1>
+    <p>For more infomation or to get a quote call us today</p>
+  </div>
+
+  <div data-include="footer"></div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,41 @@
+/* Slideshow Reviews CSS
+Author: Manjeet Panwar
+Date: 2021
+*/
+
+.quote-slider {
+  list-style: none;
+  display: block;
+  position: relative;
+  padding: 120px;
+  text-align: center; 
+  overflow: hidden;
+}  
+
+.quote-slider li {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -60%;
+  width: 60%;
+  font-family: "Crimson Text", serif;
+  font-style: bolder;
+  font-weight: 700; 
+  font-size: 3.2vh;
+  color: #fff;
+  /*text-shadow: 2px 2px 0px #0083cd;*/
+  font-style: italic;
+  text-align: center;
+  z-index: 5;
+  text-align: center; 
+}
+
+.quote-slider li .site {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  margin-top: 10px;
+  /*font-size: 3vw;*/
+  text-align: center;
+
+}

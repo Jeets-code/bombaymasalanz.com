@@ -1,0 +1,60 @@
+<!--Scrolling text code
+Author: Manjeet Panwar
+Date: 2021
+-->
+
+<!DOCTYPE html>
+<title>Scrolling text</title>
+
+<!-- Styles --> 
+<style>
+.example1 {
+ height: 60px;  
+ position: relative;
+ background-color: #ff9500;
+ overflow: hidden;
+}
+.example1 h3 {
+ font-size: 4vw;
+ color: black;
+ position: absolute; 
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ padding: 5px;
+ line-height: 50px;
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);  
+ transform:translateX(100%);
+ /* Apply animation to this element */  
+ -moz-animation: example1 6s linear infinite;
+ -webkit-animation: example1 6s linear infinite;
+ animation: example1 6s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%);     
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
+</style>
+
+<!-- HTML --> 
+<div class="example1">
+<h3><nobr><b>Call Now: 06 358 0714</b></nobr></h3>
+</div>
